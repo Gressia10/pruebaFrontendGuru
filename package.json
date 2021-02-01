@@ -28,8 +28,12 @@
     "react-apollo": "^3.1.5",
     "react-bootstrap-table-next": "^4.0.3",
     "react-dom": "^16.14.0",
+    "react-redux": "^7.2.2",
     "react-toastify": "^7.0.2",
     "reactstrap": "^8.8.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
     "unfetch": "^4.2.0",
     "yelp-fusion": "^3.0.0"
   }

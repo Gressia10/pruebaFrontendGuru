@@ -1,0 +1,6 @@
+export const SEARCH = 'SEARCH'
+export const ALL = 'ALL'
+export const DETAIL = 'DETAIL'
+export const WRITE = 'WRITE'
+export const BEFORE = 'BEFORE'
+export const AFTER = 'AFTER'

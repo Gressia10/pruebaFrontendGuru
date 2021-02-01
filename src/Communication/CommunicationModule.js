@@ -23,6 +23,7 @@ const uploadLink = createUploadLink({
 
 const link = new HttpLink({
   uri: 'https://api.yelp.com/v3/graphql',
+  
   fetchOptions:{
     mode: 'no-cors',
   }
@@ -37,8 +38,10 @@ const authMiddleware = new ApolloLink((operation, forward) => {
   // add the authorization to the headers
   operation.setContext({
     headers: {
+      // 'authorization': 'Bearer _961jkjpPEKGMX6YlEZm8awCLH1avefv5RUIhm6ciV_8kfRRr-gRay5GIICt9Ih-ggqoKNJdnSD7rBuIwmcbiaHSLUFWeJmOaHmzO5t4UwYvJCfX7hy38gy4IhUWX3Yx',
       'authorization': token() ? `Bearer ${token()}` : "",
       // 'Accept-Language': 'en-US',
+      // 'Content-Type': 'application/graphql',
       "Access-Control-Allow-Origin": "*"
     }
   });
